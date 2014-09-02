@@ -3,7 +3,6 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-import javax.swing.JOptionPane;
 
 
 /**
@@ -12,33 +11,33 @@ import javax.swing.JOptionPane;
    * Universidad del Valle de Guatemala.
    * Seccion: 30 Estructura de Datos
    * @author Brandon Mendez Carnet: 13087
-   * @author Max de leon: 13261
+   * @author Max de leon: 
    * Programa factory que selecciona la implementacion a utilizar
    * 
    *
    */
 
 
-class FactorySet<E> {
+public class FactorySet{
 	/*Se utiliza el factory para seleccionar la implementacion
 	 * @Param entry: la eleccion de la implementacion
 	 */
-	public Set<E> getSetImplementacion(String entry){
+	public Set<String> getSetImplementacion(String entry){
 		if (entry.equals("hashset")){		      
-			return new HashSet<E>(); //regresa list
+			return new HashSet<String>(); //regresa hash
 		}
 		if (entry.equals("treeset")){
-
-			return new TreeSet<E>(); //regresa list
+			return new TreeSet<String>(); //regresa treeset
 		}
-		
 		if (entry.equals("linkedhashset")){
-			return new LinkedHashSet<E>(); //regresa Vector
-			
+			return new LinkedHashSet<String>(); //regresa linked	
 		}
 
 		return null;
-		
-		
 	}
+	
+	
+	
+	
 }
+
