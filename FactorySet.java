@@ -11,7 +11,7 @@ import java.util.TreeSet;
    * Universidad del Valle de Guatemala.
    * Seccion: 30 Estructura de Datos
    * @author Brandon Mendez Carnet: 13087
-   * @author Max de leon: 
+   * @author Max de leon: 13012
    * Programa factory que selecciona la implementacion a utilizar
    * 
    *
