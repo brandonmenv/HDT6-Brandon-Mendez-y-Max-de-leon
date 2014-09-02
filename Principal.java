@@ -3,6 +3,7 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 
@@ -12,7 +13,7 @@ import javax.swing.JOptionPane;
    * Universidad del Valle de Guatemala.
    * Seccion: 30 Estructura de Datos
    * @author Brandon Mendez Carnet: 13087
-   * @author Max de leon: 13261
+   * @author Max de leon: 
    * Programa principal de la HDT6
    * 
    *
@@ -21,25 +22,16 @@ import javax.swing.JOptionPane;
 
 public class Principal<E> {
 
+	private static JFrame frame;
 	public static void main(String[] args) {
 		
-		String respuest="";		
-		if(respuest!=""){
-			respuest=JOptionPane.showInputDialog("Ingrese la implementacion que desea utilizar"); 
-			FactorySet<String> factory=new FactorySet<String>();
-			factory.getSetImplementacion(respuest);
-			
-			
-		}
-		
-		
-		
-		String programador = JOptionPane.showInputDialog("Ingrese "); 
-
-		
-		
-		
-		
+		InterfazGrafica in=new InterfazGrafica(frame);
+		in.creandoInterfaz();		
 		
 	}
 	
+	
+
+	
+
+}
