@@ -5,7 +5,7 @@
    * Universidad del Valle de Guatemala.
    * Seccion: 30 Estructura de Datos
    * @author Brandon Mendez Carnet: 13087
-   * @author Max de leon: 
+   * @author Max de leon: 13012
    * Gui de la hoja de trabajo no.6 
    * 
    *
