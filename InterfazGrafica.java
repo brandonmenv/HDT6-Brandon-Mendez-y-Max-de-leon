@@ -41,7 +41,7 @@ public class InterfazGrafica extends JPanel implements ActionListener{
 	private JTextField jNombre;
 	private String tipoProgramador="",implementacion="";
 	private JButton btonEnviar;
-	private String resultado="";
+	private String resultado="", req5="";
 	/**
 	* Constructor con un parametro que es un frame de control de errores
 	* @param v El parámetro v es un frame que sirve para mostrarle errores de ingreso al usuario
@@ -428,7 +428,20 @@ public class InterfazGrafica extends JPanel implements ActionListener{
         
 		
 	}
-	
+	public String muestraReq5 (){
+	/*
+          * Resolviendo el requerimiento no.5
+          * Indicar SI o NO el conjunto de desarrolladores Java es un subconjunto de Desarrolladores Web. 
+          */
+	        boolean bandera=programadoresJava.containsAll(programadoresWeb);
+	     
+	         if(bandera==false){
+	             req5="El conjunto de java no es subconjunto del conjunto web";
+	         }
+	         if(bandera==true){
+	             req5="El conjunto de java es subconjunto del conjunto web";
+	         }
+	}
 
 }
 
